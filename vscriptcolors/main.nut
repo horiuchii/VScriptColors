@@ -4,7 +4,7 @@
 File must be in scripts/vscripts/vscriptcolors folder!
 
 Put this at the top of your file to use VScriptColors
-IncludeScript("vscriptcolors/main.nut", this)
+IncludeScript("vscriptcolors/main.nut", this);
 
 
 
@@ -37,12 +37,12 @@ Pass in more than two args to format the message
 
 IncludeScript("vscriptcolors/colorlist.nut", this);
 
-function ColorExists(color)
+::ColorExists <- function(color)
 {
 	return color in ColorsTable;
 }
 
-function DefineColor(name, color)
+::DefineColor <- function(name, color)
 {
 	if(color.len() == 6)
 		ColorsTable[name] <- color;
@@ -50,7 +50,7 @@ function DefineColor(name, color)
 		printl("[VSCRIPTCOLORS] ERROR: Tried to fill color " + name + " with an invalid hex color! Must be 6 digit hex!");
 }
 
-function GetClientTeamColor(client)
+::GetClientTeamColor <- function(client)
 {
 	if(client != null && client.IsPlayer())
 	{
@@ -64,7 +64,7 @@ function GetClientTeamColor(client)
 	}	
 }
 
-function ColorPrint(client, message, ...)
+::ColorPrint <- function(client, message, ...)
 {
 	if(client != null)
 	{

@@ -33,14 +33,14 @@ Pass in more than two args to format the message
 
 ## Usage Examples
 
-ColorPrint(client, "hi {green[15]}faded text! {blue[120]}not so faded text! {red}normal text!")
+`ColorPrint(client, "hi {green[15]}faded text! {blue[120]}not so faded text! {red}normal text!")`
 
 or
 
-ColorPrint(client, "hi {3EFF3E[15]}faded text! {99CCFF[120]}not so faded text! {FF4040}normal text!")
+`ColorPrint(client, "hi {3EFF3E[15]}faded text! {99CCFF[120]}not so faded text! {FF4040}normal text!")`
 
 ![Output](/assets/fadedtext.jpg "Faded Text Output")
 
-ColorPrint(null, "{" + GetClientTeamColor(GetListenServerHost()) + "}Horiuchi {white}has unboxed: {unusual}Unusual Missing Masterpiece")
+`ColorPrint(null, "{" + GetClientTeamColor(GetListenServerHost()) + "}Horiuchi {white}has unboxed: {unusual}Unusual Missing Masterpiece")`
 
 ![Output](/assets/unboxtext.jpg "Unbox Text Output")
